@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('./components/head.html', {'title': 'PatiPani | Recete'})
+
+<body>
+    @@include('./components/header.html')
+    <main>
+        @@include('./components/page-title.html', {'title': 'Contact'})
+        <div class="contact">
+            <div class="contact__container">
+                <div class="contact__blocks">
+                    <div class="contact__block">
+                        <img src="@img/contact1.jpg" alt="">
+                        <div class="contact__block--details">
+                            <h5>ADRESA</h5>
+                            <p>Str. Uzinelor 19,</p>
+                            <p>MD-2024</p>
+                            <p>Chișinău, Republica Moldova</p>
+                        </div>
+                        <div class="contact__block--details">
+                            <h5>TELEFON</h5>
+                            <a href="tel:+37368967642">+(373) 689 67 642</a>
+                        </div>
+                    </div>
+                    <div class="contact__block">
+                        <img src="@img/contact2.jpg" alt="">
+                        <div class="contact__block--details">
+                            <h5>GRAFICUL MUNCII</h5>
+                            <table>
+                                <tr>
+                                    <td>Luni - Vineri:</td>
+                                    <td>09:00 - 18:00</td>
+                                </tr>
+                                <tr>
+                                    <td>Pauză de masă:</td>
+                                    <td>13:00 - 14:00</td>
+                                </tr>
+                                <tr>
+                                    <td>Sâmbătă:</td>
+                                    <td>10:00 - 14:00</td>
+                                </tr>
+                            </table>
+
+                        </div>
+                        <div class="contact__block--details">
+                            <h5>EMAIL</h5>
+                            <p>+(373) 689 67 642</p>
+                        </div>
+                    </div>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10876.818844287143!2d28.857262!3d47.0362137!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6ac9c082974fb047!2sOficiul%20Po%C8%99tal%20MD-2024!5e0!3m2!1sen!2s!4v1649345160577!5m2!1sen!2s" width="820"
+                    height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+        @@include('./components/footer.html')
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.7/swiper-bundle.min.js" integrity="sha512-WlN87oHzYKO5YOmINf1+pSkbt4gm+lOro4fiSTCjII4ykJe/ycHKIaa9b2l9OMkbqEA4NxwTXAGFjSXgqEh19w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>

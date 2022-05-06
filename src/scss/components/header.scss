@@ -1,0 +1,186 @@
+.header {
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__upper {
+        padding: 30px 0;
+    }
+
+    &__nav {
+        @media (max-width: $tablet) {
+            position: fixed;
+            width: 40%;
+            right: -40%;
+            padding: 50px 0 0 50px;
+            @include adaptiv-value('padding-top', 50, 20, 1);
+            @include adaptiv-value('padding-left', 50, 30, 1);
+            background-color: #FFFFFF;
+            z-index: 11;
+            height: 100%;
+            transition: .3s;
+            box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+
+            &.active {
+                right: 0;
+            }
+        }
+
+        @media (max-width: $mobileSmall) {
+            right: -60%;
+            width: 60%;
+        }
+
+        &--list {
+            display: flex;
+            align-items: center;
+            @include adaptiv-value('gap', 60, 20, 1);
+
+            @media (max-width: $tablet) {
+                flex-direction: column;
+                align-items: inherit;
+            }
+
+            li {
+                display: flex;
+                align-items: center;
+                gap: 17px;
+
+                a {
+                    position: relative;
+                    text-transform: uppercase;
+                    font-weight: 500;
+                    transition: .3s;
+
+                    @media (max-width: $tablet) {
+                        order: -1;
+                    }
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        width: 0;
+                        height: 1px;
+                        background-color: $maincolor;
+                        left: 0;
+                        bottom: -3px;
+                        transition: .5s;
+                    }
+
+                    &:hover {
+                        &::after {
+                            width: 100%;
+                        }
+                    }
+
+                    &.active {
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            width: 100%;
+                            height: 1px;
+                            background-color: $maincolor;
+                            left: 0;
+                            bottom: -3px;
+                            transition: .3s;
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                    }
+                }
+
+                &:last-of-type {
+                    a {
+                        &::after {
+                            left: 100%;
+                        }
+
+                        &:hover {
+                            &::after {
+                                left: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &__right {
+        @include flex-gap($gap: 20px);
+
+        &--call {
+            @include flex-gap($gap: 30px);
+
+            a {
+                font-size: 16px;
+            }
+
+            @media (max-width: $mobileMedium) {
+                display: none
+            }
+        }
+
+        .language {
+            &__current {
+                cursor: pointer;
+                display: flex;
+                border: 1px solid rgba(0, 0, 0, 0.1);
+                padding: 13px;
+                border-radius: 4px;
+                transition: .2s;
+
+                &:hover {
+                    background-color: rgba(0, 0, 0, 0.1);
+                }
+            }
+        }
+    }
+
+    &__lower {
+        .header__container {
+            gap: 20px;
+        }
+
+        padding: 15px 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+
+        .button__catalog {
+            @include adaptiv-value('width', 220, 100, 1);
+
+            a {
+                width: 100%;
+            }
+
+            @media (max-width: $mobileSmall) {
+                flex: 1;
+                height: 100%;
+            }
+        }
+
+
+        &--cart {
+            position: relative;
+
+            .cart__label {
+                position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 24px;
+                height: 24px;
+                background-color: $greencolor;
+                color: #FFFFFF;
+                font-weight: 500;
+                border-radius: 100%;
+                text-align: center;
+                top: -10px;
+                right: -10px;
+            }
+        }
+    }
+}

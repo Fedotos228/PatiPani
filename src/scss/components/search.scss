@@ -1,0 +1,33 @@
+.search-modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 12;
+    inset: 0;
+    padding: 10px;
+    background-color: #fff;
+    @include visibility(hidden);
+
+    &.active {
+        @include visibility(visible);
+    }
+
+    &__close {
+        display: block;
+        text-align: right;
+        margin-bottom: 20px;
+    }
+
+    .search {
+        input {
+            width: 100%;
+        }
+
+        button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 10px;
+        }
+    }
+}
