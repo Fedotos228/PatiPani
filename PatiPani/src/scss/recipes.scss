@@ -1,0 +1,225 @@
+.recipes {
+    margin-bottom: 50px;
+    &__intro {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 410px;
+        @media (max-width: $mobileSmall) {
+            height: 100%;
+        }
+        @media (max-width: $mobile) {
+            padding: 30px 15px;
+        }
+        &--body {
+            max-width: 850px;
+            text-align: center;
+            h2 {
+                color: #fff;
+            }
+            p {
+                margin: 30px 0;
+                font-size: 16px;
+                line-height: 160%;
+                color: #FFFFFF;
+            }
+            .lines {
+                display: block;
+                margin-bottom: 30px;
+                span {
+                    display: block;
+                    margin: 0 auto;
+                    width: 100px;
+                    height: 1px;
+                    background-color: #fff;
+                    &:not(:last-child) {
+                        margin-bottom: 3px;
+                    }
+                }
+            }
+            .recipes__intro--tags {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+        }
+    }
+    &__header {
+        padding: 30px 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        .recipes__container {
+            display: flex;
+            align-items: center;
+            gap: 100px;
+            @media (max-width: $tablet) {
+                justify-content: space-between;
+                gap: 30px;
+            }
+            @media (max-width: $mobileMedium) {
+                flex-direction: column;
+            }
+        }
+        .recipes__findet {
+            span {
+                font-weight: 600;
+                line-height: 17px;
+            }
+        }
+        .recipes__sort {
+            display: flex;
+            align-items: center;
+            @include adaptiv-value('gap', 30, 15, 1);
+            @media (max-width: $mobileSmall) {
+                flex-direction: column;
+            }
+            &--list {
+                display: flex;
+                align-items: center;
+                @include adaptiv-value('gap', 30, 15, 1);
+                li {
+                    &:hover {
+                        button {
+                            color: $maincolor;
+                            text-decoration-line: underline;
+                        }
+                    }
+                    &.active {
+                        button {
+                            color: $maincolor;
+                            text-decoration-line: underline;
+                        }
+                    }
+                    button {
+                        transition: .3s;
+                        color: rgba(0, 0, 0, 0.4);
+                    }
+                }
+            }
+        }
+    }
+    &__grid {
+        margin: 30px 0 50px;
+        &--body {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 50px;
+            @include adaptiv-value('grid-gap', 50, 15, 1);
+            @media (max-width: $tablet) {
+                grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+            }
+            .recipe {
+                position: relative;
+                display: flex;
+                align-items: center;
+                @include adaptiv-value('gap', 30, 15, 1);
+                @media (max-width: $tablet) {
+                    flex-direction: column;
+                    border: 1px solid rgba(0, 0, 0, 0.1);
+                    padding: 30px 15px;
+                }
+                img {
+                    max-width: 220px;
+                }
+                &__tags {
+                    margin-bottom: 20px;
+                    span {
+                        font-size: 12px;
+                        line-height: 15px;
+                        text-transform: uppercase;
+                        color: #41AE50;
+                        &:not(:last-child) {
+                            margin-right: 10px;
+                        }
+                    }
+                }
+                a {
+                    display: block;
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 29px;
+                    margin-bottom: 20px;
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        inset: 0;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                &__details {
+                    display: flex;
+                    @include adaptiv-value('gap', 20, 10, 1);
+                    &--ingredients,
+                    &--time {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        span {
+                            font-size: 18px;
+                            color: rgba(0, 0, 0, 0.4);
+                        }
+                    }
+                    &--ingredients {
+                        position: relative;
+                        padding-right: 20px;
+                        border-right: 1px solid rgba(0, 0, 0, 0.1);
+                        span {
+                            cursor: pointer;
+                        }
+                        .ingredients__dropdown {
+                            display: block;
+                            position: absolute;
+                            top: 20px;
+                            background-color: #fff;
+                            z-index: 10;
+                            transition: .3s;
+                            opacity: 0;
+                            visibility: hidden;
+                            li {
+                                padding: 20px 10px;
+                                &:not(:last-child) {
+                                    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+                                }
+                            }
+                            &.open {
+                                opacity: 1;
+                                visibility: visible;
+                            }
+                        }
+                    }
+                }
+                &__footer {
+                    margin-top: 20px;
+                    display: flex;
+                    gap: 10px;
+                    .button {
+                        padding: 15px 0;
+                        color: $maincolor;
+                    }
+                    .button__save {
+                        width: 165px;
+                        span {
+                            color: rgba(0, 0, 0, 0.4);
+                        }
+                    }
+                    .button__count {
+                        width: 70px;
+                    }
+                }
+            }
+        }
+    }
+    .pagination {
+        .pagination__list--item {
+            &.active,
+            &:hover {
+                background-color: $lightgreen;
+                a {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.reasons {
+    @include adaptiv-value('margin-bottom', 60, 40, 1);
+    &-text {
+        >p {
+            line-height: 22px;
+            color: #4F5256;
+            margin-bottom: 20px;
+            &::before {
+                display: inline;
+                content: url('../img/svg/blood.svg');
+                vertical-align: middle;
+                margin-right: 20px;
+            }
+        }
+    }
+    &__schedule {
+        height: 225px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include adaptiv-value('margin-top',
+        50,
+        30,
+        1);
+        @include adaptiv-value('margin-bottom',
+        50,
+        30,
+        1);
+    }
+}

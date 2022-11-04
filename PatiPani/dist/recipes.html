@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PatiPani | Recete</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css?_v=20220506004746" />
+    <link rel="stylesheet" href="css/style.min.css?_v=20220506004746">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+</head>
+
+<body>
+    <header class="header">
+    <div class="header__upper">
+        <div class="header__container">
+            <a href="index.html" class="logo">
+                LOGO
+            </a>
+            <nav class="header__nav">
+                <ul class="header__nav--list">
+                    <li class="active">
+                        <a href="index.html">principala</a>
+                    </li>
+                    <li>
+                        <span class="icon-bolt"></span>
+                        <a href="promotions.html">Promoții</a>
+                    </li>
+                    <li>
+                        <a href="recipes.html">recete</a>
+                    </li>
+                    <li>
+                        <a href="faq.html">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contacte</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__right">
+                <div class="header__right--call">
+                    <span class="icon-call"></span>
+                    <a href="tel:+373069320200">+(373) 069 320 200</a>
+                </div>
+                <div class="header__right--login">
+                    <!-- <button class=" button__outlined--green">
+                        LOGARE
+                    </button> -->
+                </div>
+                <div class="language">
+                    <span class="language__current">
+                        <svg width="28" height="20" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="28" height="20" rx="2" fill="white" />
+                            <mask id="mask0_207_2310" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
+                                width="28" height="20">
+                                <rect width="28" height="20" rx="2" fill="white" />
+                            </mask>
+                            <g mask="url(#mask0_207_2310)">
+                                <rect x="13.3334" width="14.6667" height="20" fill="#E5253D" />
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 20H9.33333V0H0V20Z"
+                                    fill="#0A3D9C" />
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.33337 20H18.6667V0H9.33337V20Z"
+                                    fill="#FFD955" />
+                            </g>
+                        </svg>
+                    </span>
+                </div>
+                <div class="burger">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header__lower">
+        <div class="header__container">
+            <a class="button  button__green button__catalog" href="catalog.html">CATALOG</a>
+            <form action="#" class="search">
+                <input type="text" placeholder="Caută produse">
+                <button class="icon-search search-button"></button>
+            </form>
+            <div class="header__lower--cart">
+                <button class="button button__grey cart-open">
+                    <span class="icon-cart"></span>
+                    <span class="cart__label">14</span>
+                </button> <div class="cart-modal">
+    <div class="cart-modal__header">
+        <h3>Coșul</h3>
+        <button class="modal-close icon-close"></button>
+    </div>
+    <div class="cart-modal__body">
+        <div class="cart-product">
+            <img class="cart-product__image" src="img/new-product.jpg" alt="">
+            <div class="cart-product__content product-content">
+                <p class="product-content__name">
+                    Desert Torct cu glazura de ciocolata
+                </p>
+                <div class="product-content__meta">
+                    <h4>1200 mdl</h4>
+                    <div class="product-controls">
+                        <div class="product-controls__counter">
+                            <button class="icon-minus"></button>
+                            <div class="counter">1</div>
+                            <button class="icon-plus"></button>
+                        </div>
+                        <button class="product-controls__delete icon-close"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cart-product">
+            <img class="cart-product__image" src="img/new-product.jpg" alt="">
+            <div class="cart-product__content product-content">
+                <p class="product-content__name">
+                    Fotoliu de birou Royal Lux Split Piele negru, denumire pe două rânduri
+                </p>
+                <div class="product-content__meta">
+                    <h4>1200 mdl</h4>
+                    <div class="product-controls">
+                        <div class="product-controls__counter">
+                            <button class="icon-minus"></button>
+                            <div class="counter">1</div>
+                            <button class="icon-plus"></button>
+                        </div>
+                        <button class="product-controls__delete icon-close"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cart-product">
+            <img class="cart-product__image" src="img/new-product.jpg" alt="">
+            <div class="cart-product__content product-content">
+                <p class="product-content__name">
+                    Fotoliu de birou Royal Lux Split Piele negru, denumire pe două rânduri
+                </p>
+                <div class="product-content__meta">
+                    <h4>1200 mdl</h4>
+                    <div class="product-controls">
+                        <div class="product-controls__counter">
+                            <button class="icon-minus"></button>
+                            <div class="counter">1</div>
+                            <button class="icon-plus"></button>
+                        </div>
+                        <button class="product-controls__delete icon-close"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cart-product">
+            <img class="cart-product__image" src="img/new-product.jpg" alt="">
+            <div class="cart-product__content product-content">
+                <p class="product-content__name">
+                    Fotoliu de birou Royal Lux Split Piele negru, denumire pe două rânduri
+                </p>
+                <div class="product-content__meta">
+                    <h4>1200 mdl</h4>
+                    <div class="product-controls">
+                        <div class="product-controls__counter">
+                            <button class="icon-minus"></button>
+                            <div class="counter">1</div>
+                            <button class="icon-plus"></button>
+                        </div>
+                        <button class="product-controls__delete icon-close"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cart-product">
+            <img class="cart-product__image" src="img/new-product.jpg" alt="">
+            <div class="cart-product__content product-content">
+                <p class="product-content__name">
+                    Fotoliu de birou Royal Lux Split Piele negru, denumire pe două rânduri
+                </p>
+                <div class="product-content__meta">
+                    <h4>1200 mdl</h4>
+                    <div class="product-controls">
+                        <div class="product-controls__counter">
+                            <button class="icon-minus"></button>
+                            <div class="counter">1</div>
+                            <button class="icon-plus"></button>
+                        </div>
+                        <button class="product-controls__delete icon-close"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cart-modal__footer">
+        <h4>8400 mdl</h4>
+        <a href="checkout.html" class="button__green--secundary">Spre achitare</a>
+    </div>
+</div>
+
+            </div>
+        </div>
+    </div>
+</header>
+
+    <main>
+        <div class="recipes">
+            <div class="recipes__intro" style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/recipes.jpg) 50% 50% / cover no-repeat;">
+                <div class="recipes__intro--body">
+                    <h2>Recete</h2>
+                    <p>Quia atque architecto. Neque sunt sapiente praesentium non voluptatibus iste eum vel. Eveniet deserunt deleniti adipisci in. Voluptatum esse totam dolorum ducimus. Itaque labore aut quia rerum explicabo qui et eaque architecto. Perspiciatis
+                        eos at et expedita corporis vero eligendi delectus.
+                    </p>
+                    <div class="lines">
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="recipes__intro--tags">
+                        <button class="button button__outlined--lightgray">Torturi</button>
+                        <button class="button button__outlined--lightgray">Tag 1</button>
+                        <button class="button button__outlined--lightgray">Tag 2</button>
+                        <button class="button button__outlined--lightgray">Tag 3</button>
+                        <button class="button button__outlined--lightgray">Tag 4</button>
+                        <button class="button button__outlined--lightgray">Tag 5</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recipes__header">
+                <div class="recipes__container">
+                    <div class="recipes__findet">
+                        <span>Găsite:</span>
+                        <span>432 recete</span>
+                    </div>
+                    <div class="recipes__sort">
+                        <p>Sortează după:</p>
+                        <ul class="recipes__sort--list">
+                            <li>
+                                <button>Relevanță</button>
+                            </li>
+                            <li>
+                                <button>Popularitate</button>
+                            </li>
+                            <li>
+                                <button>Data adăugării</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recipes__grid">
+                <div class="recipes__container">
+                    <div class="recipes__grid--body">
+                        <div class="recipe">
+                            <img src="img/recipe.jpg" alt="">
+                            <div class="recipe__content">
+                                <div class="recipe__tags">
+                                    <span>#TORTURI</span>
+                                    <span>#TAG 2</span>
+                                    <span>#TAG 3</span>
+                                </div>
+                                <a href="recipe-single.html">Sunt Quod Voluptatem</a>
+                                <div class="recipe__details">
+                                    <div class="recipe__details--ingredients">
+                                        <p>6 ingridiente</p>
+                                        <span class="icon-arrow_down ingredients-button"></span>
+                                        <ul class="ingredients__dropdown">
+                                            <li>Morcov</li>
+                                            <li>Carne</li>
+                                            <li>Ciuperci</li>
+                                            <li>Zahar</li>
+                                        </ul>
+                                    </div>
+                                    <div class="recipe__details--time">
+                                        <span class="icon-timer"></span>
+                                        <p>30 MINUTE</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recipe">
+                            <img src="img/recipe.jpg" alt="">
+                            <div class="recipe__content">
+                                <div class="recipe__tags">
+                                    <span>#TORTURI</span>
+                                    <span>#TAG 2</span>
+                                    <span>#TAG 3</span>
+                                </div>
+                                <a href="recipe-single.html">Sunt Quod Voluptatem</a>
+                                <div class="recipe__details">
+                                    <div class="recipe__details--ingredients">
+                                        <p>6 ingridiente</p>
+                                        <span class="icon-arrow_down ingredients-button"></span>
+                                        <ul class="ingredients__dropdown">
+                                            <li>Morcov</li>
+                                            <li>Carne</li>
+                                            <li>Ciuperci</li>
+                                            <li>Zahar</li>
+                                        </ul>
+                                    </div>
+                                    <div class="recipe__details--time">
+                                        <span class="icon-timer"></span>
+                                        <p>30 MINUTE</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recipe">
+                            <img src="img/recipe.jpg" alt="">
+                            <div class="recipe__content">
+                                <div class="recipe__tags">
+                                    <span>#TORTURI</span>
+                                    <span>#TAG 2</span>
+                                    <span>#TAG 3</span>
+                                </div>
+                                <a href="recipe-single.html">Sunt Quod Voluptatem</a>
+                                <div class="recipe__details">
+                                    <div class="recipe__details--ingredients">
+                                        <p>6 ingridiente</p>
+                                        <span class="icon-arrow_down ingredients-button"></span>
+                                        <ul class="ingredients__dropdown">
+                                            <li>Morcov</li>
+                                            <li>Carne</li>
+                                            <li>Ciuperci</li>
+                                            <li>Zahar</li>
+                                        </ul>
+                                    </div>
+                                    <div class="recipe__details--time">
+                                        <span class="icon-timer"></span>
+                                        <p>30 MINUTE</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recipe">
+                            <img src="img/recipe.jpg" alt="">
+                            <div class="recipe__content">
+                                <div class="recipe__tags">
+                                    <span>#TORTURI</span>
+                                    <span>#TAG 2</span>
+                                    <span>#TAG 3</span>
+                                </div>
+                                <a href="recipe-single.html">Sunt Quod Voluptatem</a>
+                                <div class="recipe__details">
+                                    <div class="recipe__details--ingredients">
+                                        <p>6 ingridiente</p>
+                                        <span class="icon-arrow_down ingredients-button"></span>
+                                        <ul class="ingredients__dropdown">
+                                            <li>Morcov</li>
+                                            <li>Carne</li>
+                                            <li>Ciuperci</li>
+                                            <li>Zahar</li>
+                                        </ul>
+                                    </div>
+                                    <div class="recipe__details--time">
+                                        <span class="icon-timer"></span>
+                                        <p>30 MINUTE</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recipe">
+                            <img src="img/recipe.jpg" alt="">
+                            <div class="recipe__content">
+                                <div class="recipe__tags">
+                                    <span>#TORTURI</span>
+                                    <span>#TAG 2</span>
+                                    <span>#TAG 3</span>
+                                </div>
+                                <a href="recipe-single.html">Sunt Quod Voluptatem</a>
+                                <div class="recipe__details">
+                                    <div class="recipe__details--ingredients">
+                                        <p>6 ingridiente</p>
+                                        <span class="icon-arrow_down ingredients-button"></span>
+                                        <ul class="ingredients__dropdown">
+                                            <li>Morcov</li>
+                                            <li>Carne</li>
+                                            <li>Ciuperci</li>
+                                            <li>Zahar</li>
+                                        </ul>
+                                    </div>
+                                    <div class="recipe__details--time">
+                                        <span class="icon-timer"></span>
+                                        <p>30 MINUTE</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recipe">
+                            <img src="img/recipe.jpg" alt="">
+                            <div class="recipe__content">
+                                <div class="recipe__tags">
+                                    <span>#TORTURI</span>
+                                    <span>#TAG 2</span>
+                                    <span>#TAG 3</span>
+                                </div>
+                                <a href="recipe-single.html">Sunt Quod Voluptatem</a>
+                                <div class="recipe__details">
+                                    <div class="recipe__details--ingredients">
+                                        <p>6 ingridiente</p>
+                                        <span class="icon-arrow_down ingredients-button"></span>
+                                        <ul class="ingredients__dropdown">
+                                            <li>Morcov</li>
+                                            <li>Carne</li>
+                                            <li>Ciuperci</li>
+                                            <li>Zahar</li>
+                                        </ul>
+                                    </div>
+                                    <div class="recipe__details--time">
+                                        <span class="icon-timer"></span>
+                                        <p>30 MINUTE</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recipe">
+                            <img src="img/recipe.jpg" alt="">
+                            <div class="recipe__content">
+                                <div class="recipe__tags">
+                                    <span>#TORTURI</span>
+                                    <span>#TAG 2</span>
+                                    <span>#TAG 3</span>
+                                </div>
+                                <a href="recipe-single.html">Sunt Quod Voluptatem</a>
+                                <div class="recipe__details">
+                                    <div class="recipe__details--ingredients">
+                                        <p>6 ingridiente</p>
+                                        <span class="icon-arrow_down ingredients-button"></span>
+                                        <ul class="ingredients__dropdown">
+                                            <li>Morcov</li>
+                                            <li>Carne</li>
+                                            <li>Ciuperci</li>
+                                            <li>Zahar</li>
+                                        </ul>
+                                    </div>
+                                    <div class="recipe__details--time">
+                                        <span class="icon-timer"></span>
+                                        <p>30 MINUTE</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recipe">
+                            <img src="img/recipe.jpg" alt="">
+                            <div class="recipe__content">
+                                <div class="recipe__tags">
+                                    <span>#TORTURI</span>
+                                    <span>#TAG 2</span>
+                                    <span>#TAG 3</span>
+                                </div>
+                                <a href="recipe-single.html">Sunt Quod Voluptatem</a>
+                                <div class="recipe__details">
+                                    <div class="recipe__details--ingredients">
+                                        <p>6 ingridiente</p>
+                                        <span class="icon-arrow_down ingredients-button"></span>
+                                        <ul class="ingredients__dropdown">
+                                            <li>Morcov</li>
+                                            <li>Carne</li>
+                                            <li>Ciuperci</li>
+                                            <li>Zahar</li>
+                                        </ul>
+                                    </div>
+                                    <div class="recipe__details--time">
+                                        <span class="icon-timer"></span>
+                                        <p>30 MINUTE</p>
+                                    </div>
+                                </div>
+                                <!-- <div class="recipe__footer">
+                                    <button class="button button__outlined--gray button__save">
+                                        Salvează
+                                        <span class="icon-save"></span>
+                                    </button>
+                                    <button class="button button__outlined--gray button__count">3242</button>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pagination">
+    <ul class="pagination__list">
+        <li class="pagination__list--item active">
+            <a href="">1</a>
+        </li>
+        <li class="pagination__list--item">
+            <a href="">2</a>
+        </li>
+        <li class="pagination__list--item">
+            <a href="">3</a>
+        </li>
+        <li class="pagination__list--item">
+            <a href="">4</a>
+        </li>
+        <li class="pagination__list--item dots">
+            ...
+        </li>
+        <li class="pagination__list--item">
+            <a href="">10</a>
+        </li>
+    </ul>
+</div>
+        </div>
+    </main>
+    <div class="search-modal">
+    <div class="search-modal__header">
+        <div class="search-modal__close">
+            <button class="icon-close"></button>
+        </div>
+        <form action="#" class="search">
+            <input type="text" placeholder="Caută produse">
+            <button class="icon-search search-button"></button>
+        </form>
+    </div>
+    <div class="search-modal__body">
+
+    </div>
+</div>
+
+
+<footer class="footer">
+    <div class="footer__container">
+        <a href="index.html" class="logo">LOGO</a>
+        <div class="footer__center">
+            <ul class="footer__center--list">
+                <li>
+                    <a href="promotions.html">Promoții</a>
+                </li>
+                <li>
+                    <a href="recipes.html">Recete</a>
+                </li>
+                <li>
+                    <a href="faq.html">FAQ</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contacte</a>
+                </li>
+            </ul>
+            <div class="footer__center--copyright">
+                <p>Copyright © 2022. Patipani. All rights reserved.</p>
+            </div>
+        </div>
+        <div class="footer__social">
+            <a href="#">
+                <span class="icon-facebook"></span>
+            </a>
+            <a href="#">
+                <span class="icon-mail"></span>
+            </a>
+        </div>
+    </div>
+</footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.7/swiper-bundle.min.js?_v=20220506004746" integrity="sha512-WlN87oHzYKO5YOmINf1+pSkbt4gm+lOro4fiSTCjII4ykJe/ycHKIaa9b2l9OMkbqEA4NxwTXAGFjSXgqEh19w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/app.min.js?_v=20220506004746"></script>
+</body>
+
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('./components/head.html', {'title': 'Acasă'})
+
+<body>
+    @@include('./components/header.html')
+    <main>
+        <section class="hero">
+            <div class="hero__container">
+                <div class="page__hero-slider hero-slider">
+                    <div class="hero-slider__body">
+                        <div class="hero-slider__slider">
+                            <div class="slider-hero__body swiper">
+                                <div class="slider-hero__slide" style="background: url(@img/heo.png) 50% 50% / cover no-repeat">
+                                    <p>Blanditiis incidunt harum repellendus quibusdam alias. Fugit aut eum reiciendis sit reiciendis vel enim. Inventore veniam sequi facere architecto magnam et possimus. Et aut occaecati nihil aliquam eveniet sit dolore
+                                        veniam aut.</p>
+                                    <button class="button button__red">Află mai multe</button>
+                                </div>
+
+                                <div class="slider-hero__slide" style="background: url(@img/heo.png) 50% 50% / cover no-repeat">
+                                    <p>Blanditiis incidunt harum repellendus quibusdam alias. Fugit aut eum reiciendis sit reiciendis vel enim. Inventore veniam sequi facere architecto magnam et possimus.</p>
+                                    <button class="button button__red">Află mai multe</button>
+                                </div>
+                                <div class="slider-hero__slide" style="background: url(@img/heo.png) 50% 50% / cover no-repeat">
+                                    <p>Blanditiis incidunt harum repellendus quibusdam alias. Fugit aut eum reiciendis sit reiciendis vel enim. Inventore veniam sequi facere architecto magnam et possimus.</p>
+                                    <button class="button button__red">Află mai multe</button>
+                                </div>
+
+                            </div>
+
+                            <div class="slider-hero-controls__dots"></div>
+                            <div class="slider-hero-controls__arrows slider-arrows">
+                                <button type="button" class="slider-arrow slider-arrow__prev">
+                                    <span class="icon-arrow_down" />
+                                </button>
+                                <button type="button" class="slider-arrow slider-arrow__next">
+                                    <span class="icon-arrow_down" />
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="reasons">
+            <div class="reasons__container">
+                <h3>Motive pentru a dona sânge / componente sanguine</h3>
+                <div class="reasons-grid grid-2">
+                    <div class="reasons__card">
+                        <h3><span class="icon-blood"></span> 1</h3>
+                        <p>Sângele donat de tine poate contribui la salvarea vieții unui copil nou-născut, unei mame, unui tată, unui frate sau surori.</p>
+                    </div>
+                    <div class="reasons__card">
+                        <h3><span class="icon-blood"></span> 2</h3>
+                        <p>Poți fi sigur ca sângele donat de tine va fi întotdeauna necesar și poate fi de folos chiar cuiva apropiat ție.</p>
+                    </div>
+                    <div class="reasons__card">
+                        <h3><span class="icon-blood"></span> 3</h3>
+                        <p>Sângele reprezintă un dar neprețuit, care nu poate fi cumpărat cu bani, ci poate fi doar donat de la o presoană la alta.</p>
+                    </div>
+                    <div class="reasons__card">
+                        <h3><span class="icon-blood"></span> 4</h3>
+                        <p>E ceva ce poți oferi „din inimă”, deși uneori nu este suficient pentru toată lumea, care are nevoie.</p>
+                    </div>
+                </div>
+                <button class="button button__pink">Vezi toate motivele</button>
+            </div>
+        </section>
+        <section class="stock">
+            <div class="stock__container">
+                <h3>Stoc unități sânge</h3>
+                <p class="subtitle">Nu fi indiferent, programează-te la donare de sânge și contribuie la menținerea stocului de sânge/componente sanguine.</p>
+                <table class="stock__table">
+                    <thead>
+                        <tr>
+                            <th colspan="2">0</th>
+                            <th colspan="2">A</th>
+                            <th colspan="2">B</th>
+                            <th colspan="2">AB</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td>Rh-</td>
+                        <td>Rh+</td>
+                        <td>Rh-</td>
+                        <td>Rh+</td>
+                        <td>Rh-</td>
+                        <td>Rh+</td>
+                        <td>Rh-</td>
+                        <td>Rh+</td>
+                    </tr>
+                    <tr>
+                        <td class="colored green"></td>
+                        <td class="colored red"></td>
+                        <td class="colored red"></td>
+                        <td class="colored red"></td>
+                        <td class="colored green"></td>
+                        <td class="colored yellow"></td>
+                        <td class="colored red"></td>
+                        <td class="colored green"></td>
+                    </tr>
+                </table>
+                <table class="stock__colors">
+                    <tr>
+                        <td class="colored green">
+                            <span></span>
+                        </td>
+                        <td>Sângele de acest grup sanguin sunt disponibile în cantitate suficientă.</td>
+                    </tr>
+                    <tr>
+                        <td class="colored yellow">
+                            <span></span>
+                        </td>
+                        <td>Sângele de acest grup sanguin sunt într-o necesitate de consum sporit.</td>
+                    </tr>
+                    <tr>
+                        <td class="colored red">
+                            <span></span>
+                        </td>
+                        <td>Sângele de acest grup sanguin nu sunt disponibile în cantitate suficientă.</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <section class="locations">
+            <div class="locations__container">
+                <h3><span class="icon-blood"></span> Puncte de colectare a sângelui / componente sanguine</h3>
+                <div class="locations__tabs tabs">
+                    <ul class="tabs__list">
+                        <li class="tabs__item">
+                            <button class="tabs__button tabs__button--active" data-tabs-path="tab-stationare">
+                                <img src="@img/svg/flat.svg" alt="flat"> <p>Staționare</p>
+                            </button>
+                        </li>
+                        <li class="tabs__item">
+                            <button class="tabs__button" data-tabs-path="tab-mobile">
+                                <img src="@img/svg/mobile.svg" alt=""> <p>Mobile</p>
+                            </button>
+                        </li>
+                        <li class="tabs__item">
+                            <button class="tabs__button" data-tabs-path="tab-vezitoate">
+                                <img src="@img/svg/flat.svg" alt="flat">
+                                <img src="@img/svg/mobile.svg" alt="flat">
+                                <p>Vezi toate</p>
+                            </button>
+                        </li>
+                    </ul>
+
+                    <div class="tabs__content tabs__content--active" data-tabs-target="tab-stationare">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2721.384312896557!2d28.83110621551086!3d46.99342643812641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97ebc1530d3dd%3A0x6ccece48cab0a719!2sTimofei%20Mo%C8%99neaga%20Republican%20Clinical%20Hospital!5e0!3m2!1sen!2s!4v1666791865600!5m2!1sen!2s"
+                            height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="tabs__content" data-tabs-target="tab-mobile">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23783.228706399936!2d28.80678445780051!3d46.96875462185232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfb24fc547a58dd1b!2sValentin%20Ignatenco%20Children&#39;s%20Municipal%20Clinical%20Hospital!5e0!3m2!1sen!2s!4v1666791886472!5m2!1sen!2s"
+                            height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="tabs__content" data-tabs-target="tab-vezitoate">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23783.228706399936!2d28.80678445780051!3d46.96875462185232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c978cfc441303f%3A0x58157f79b83f40fb!2sIMSP%20Spitalul%20Clinic%20de%20Psihiatrie!5e0!3m2!1sen!2s!4v1666791908256!5m2!1sen!2s"
+                            height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="information" style="background: url(@img/info.png) 50% 50% / cover no-repeat">
+            <div class="information__container">
+                <h3>
+                    Informații utile
+                </h3>
+                <div class="information__grid grid-3">
+                    <a href="#" class="information__card">
+                        <img src="@img/svg/chain.svg" alt="">
+                        <p>Informații generale</p>
+                    </a>
+                    <a href="#" class="information__card">
+                        <img src="@img/svg/chain.svg" alt="">
+                        <p>Programare la donarea de sânge</p>
+                    </a>
+                    <a href="#" class="information__card">
+                        <img src="@img/svg/chain.svg" alt="">
+                        <p>Sângele și originea lui</p>
+                    </a>
+                    <a href="#" class="information__card">
+                        <img src="@img/svg/chain.svg" alt="">
+                        <p>Grupele de sânge</p>
+                    </a>
+                    <a href="#" class="information__card">
+                        <img src="@img/svg/chain.svg" alt="">
+                        <p>10 argumente PRO donare</p>
+                    </a>
+                    <a href="#" class="information__card">
+                        <img src="@img/svg/chain.svg" alt="">
+                        <p>Drepturile și Obligațiile Donatorilor</p>
+                    </a>
+                    <a href="#" class="information__card">
+                        <img src="@img/svg/chain.svg" alt="">
+                        <p>Cine poate fi donator</p>
+                    </a>
+                    <a href="#" class="information__card">
+                        <img src="@img/svg/chain.svg" alt="">
+                        <p>Ce trebuie să faceți înainte, în timpul și după donare</p>
+                    </a>
+                    <a href="#" class="information__card">
+                        <img src="@img/svg/chain.svg" alt="">
+                        <p>Întrebări frecvente</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="support">
+            <div class="support__container">
+                <h3>Susțineți donarea voluntară de sânge / componente sanguine</h3>
+                <div class="support__body">
+                    <div class="support-card" style="background: url(@img/support1.png) 50% 50% / cover no-repeat">
+                        <h4>Persoane fizice (donator)</h4>
+                        <ul class="support-card__list">
+                            <li>
+                                <a href="#"><img src="@img/svg/chain.svg" alt="#">Program de donări</a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="@img/svg/chain.svg" alt="#">Locații</a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="@img/svg/chain.svg" alt="#">Alte informații</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="support-card" style="background: url(@img/bloodo.png) 50% 50% / cover no-repeat">
+                        <h4>Persoane fizice (donator)</h4>
+                        <a class="app" href="#"></a>
+                    </div>
+                    <div class="support-card" style="background: url(@img/support2.png) 50% 50% / cover no-repeat">
+                        <h4>Persoane juridice</h4>
+                        <ul class="support-card__list">
+                            <li>
+                                <a href="#"><img src="@img/svg/chain.svg" alt="#">Transfer bunuri</a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="@img/svg/chain.svg" alt="#">Organizare</a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="@img/svg/chain.svg" alt="#">Mobilizare în grup</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <button class="scroll-top">
+        <span class="icon-arrow_up"></span>
+    </button> @@include('./components/footer.html')
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.4/swiper-bundle.min.js" integrity="sha512-k2o1KZdvUi59PUXirfThShW9Gdwtk+jVYum6t7RmyCNAVyF9ozijFpvLEWmpgqkHuqSWpflsLf5+PEW6Lxy/wA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>

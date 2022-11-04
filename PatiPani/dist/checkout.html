@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PatiPani | Checkout</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css?_v=20220506004746" />
+    <link rel="stylesheet" href="css/style.min.css?_v=20220506004746">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+</head>
+
+<body>
+    <header class="header">
+    <div class="header__upper">
+        <div class="header__container">
+            <a href="index.html" class="logo">
+                LOGO
+            </a>
+            <a href="tel:+373069320200">+(373) 069 320 200</a>
+        </div>
+    </div>
+
+</header>
+
+    <main>
+        <div class="page-title">
+    <div class="page-title__container">
+        <h2>Creare comandă</h2>
+        <div class="breadcrumbs">
+    <ul class="breadcrumbs__list">
+        <li><a href="index.html">Principala</a></li>
+        <li><a href="#">Catalog</a></li>
+        <li><a href="#">Promoții</a></li>
+    </ul>
+</div>
+    </div>
+</div>
+        <div class="checkout">
+
+            <div class="checkout__container">
+                <div class="checkout__body">
+                    <section class="checkout__delivery">
+                        <h4>Metoda de livrare <span>*</span></h4>
+                        <form action="#">
+                            <select name="delivery">
+                                <option value="store">Ridicare din magazin Patipani Str. Uzinelor 19 Chișinău, Republica
+                                    Moldova</option>
+                                <option value="town">Municipiul Chișinău, suburbii</option>
+                                <option value="region">Prin Republica Moldova</option>
+                            </select>
+                        </form>
+                        <form action="#" class="delivery__town">
+                            <label for="">
+                                Localitate <span>*</span>
+                                <input type="text" placeholder="ex. Durlești">
+                            </label>
+                            <label for="">
+                                Adresa de livrare <span>*</span>
+                                <input type="text" placeholder="ex. Cuza Vodă 3/2">
+                            </label>
+                        </form>
+                        <form action="#" class="delivery__region">
+                            <label for="">
+                                Raion <span>*</span>
+                                <select name="raion" id="">
+                                    <option value="Singerei">Singerei</option>
+                                    <option value="Drochia">Drochia</option>
+                                </select>
+                            </label>
+                            <label for="">
+                                Localitate <span>*</span>
+                                <input type="text" placeholder="ex. Durlești">
+                            </label>
+                            <label for="">
+                                Adresa de livrare <span>*</span>
+                                <input type="text" placeholder="ex. Cuza Vodă 3/2">
+                            </label>
+                        </form>
+                    </section>
+                    <section class="checkout__costumer">
+                        <h4>Date cumpărător</h4>
+                        <form action="#">
+                            <label for="">
+                                Numele, prenumele <span>*</span>
+                                <input type="text" placeholder="ex. Rusu Alexandru">
+                            </label>
+                            <label for="">
+                                Email
+                                <input type="text" placeholder="example@gmail.com">
+                            </label>
+                            <label for="">
+                                Nr. telefon <span>*</span>
+                                <input type="text" placeholder="+(373) 00 000 000">
+                            </label>
+                            <label for="">
+                                Comentariu către comandă
+                                <textarea name="" id="" cols="30" rows="10"
+                                    placeholder="Cum ați aflat despre noi?"></textarea>
+                            </label>
+                        </form>
+                    </section>
+                    <section class="order-products">
+                        <h4>Produse în comandă</h4>
+                        <table>
+                            <tr>
+                                <th>Denumire produs</th>
+                                <th>Preț buc.</th>
+                                <th>Cantitate</th>
+                                <th>Preț total</th>
+                            </tr>
+                            <tr>
+                                <td class="order-details">
+                                    <img src="img/new-product2.jpg" alt="">
+                                    <p>Explicabo mollitia dolores ad perspiciatis neque fugit error deleniti qui.</p>
+                                </td>
+                                <td class="order-price">
+                                    400 MDL
+                                </td>
+                                <td>
+                                    1 buc.
+                                </td>
+                                <td class="order-price">
+                                    400 MDL
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="order-details">
+                                    <img src="img/new-product2.jpg" alt="">
+                                    <p>Explicabo mollitia dolores ad perspiciatis neque fugit error deleniti qui.</p>
+                                </td>
+                                <td class="order-price">
+                                    400 MDL
+                                </td>
+                                <td>
+                                    1 buc.
+                                </td>
+                                <td class="order-price">
+                                    400 MDL
+                                </td>
+                            </tr>
+                        </table>
+                    </section>
+                </div>
+                <div class="checkout__totals">
+                    <div class="checkout__totals--body">
+                        <h3>Comanda dvs.</h3>
+                        <div class="checkout__totals--prices">
+                            <div class="totals--price">
+                                <span>Preț produse:</span>
+                                <span>400 MDL</span>
+                            </div>
+                            <div class="totals--price">
+                                <span>Livrarea:</span>
+                                <span>40 MDL</span>
+                            </div>
+
+                        </div>
+                        <div class="checkout__totals--sum">
+                            <span>Total:</span>
+                            <span>440 MDL</span>
+                        </div>
+                    </div>
+                    <a href="checked.html" class="checkout__totals--btn button button__green--secundary">Efectuați
+                        comanda</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="search-modal">
+    <div class="search-modal__header">
+        <div class="search-modal__close">
+            <button class="icon-close"></button>
+        </div>
+        <form action="#" class="search">
+            <input type="text" placeholder="Caută produse">
+            <button class="icon-search search-button"></button>
+        </form>
+    </div>
+    <div class="search-modal__body">
+
+    </div>
+</div>
+
+
+<footer class="footer">
+    <div class="footer__container">
+        <a href="index.html" class="logo">LOGO</a>
+        <div class="footer__center">
+            <ul class="footer__center--list">
+                <li>
+                    <a href="promotions.html">Promoții</a>
+                </li>
+                <li>
+                    <a href="recipes.html">Recete</a>
+                </li>
+                <li>
+                    <a href="faq.html">FAQ</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contacte</a>
+                </li>
+            </ul>
+            <div class="footer__center--copyright">
+                <p>Copyright © 2022. Patipani. All rights reserved.</p>
+            </div>
+        </div>
+        <div class="footer__social">
+            <a href="#">
+                <span class="icon-facebook"></span>
+            </a>
+            <a href="#">
+                <span class="icon-mail"></span>
+            </a>
+        </div>
+    </div>
+</footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.7/swiper-bundle.min.js?_v=20220506004746"
+        integrity="sha512-WlN87oHzYKO5YOmINf1+pSkbt4gm+lOro4fiSTCjII4ykJe/ycHKIaa9b2l9OMkbqEA4NxwTXAGFjSXgqEh19w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/app.min.js?_v=20220506004746"></script>
+</body>
+
+</html>

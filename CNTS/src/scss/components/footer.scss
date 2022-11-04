@@ -1,0 +1,60 @@
+.footer {
+    @include adaptiv-value('padding-top', 50, 30, 1);
+    background: #F8F8F8;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    &-column {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+        &__list {
+            max-width: 250px;
+            h5 {
+                margin-bottom: 20px;
+            }
+            li {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin-bottom: 10px;
+                &::before {
+                    content: url('../../img/svg/blood.svg');
+                }
+                a {
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 150%;
+                }
+            }
+            &.contacts {
+                li {
+                    &::before {
+                        content: none;
+                    }
+                    span {
+                        color: $redsecond;
+                    }
+                }
+            }
+        }
+    }
+    &__partners {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        @include adaptiv-value('margin-bottom',
+        90,
+        50,
+        1);
+    }
+    .copyrights {
+        padding: 20px 0;
+        background-color: #242424;
+        p {
+            text-align: center;
+            font-size: 14px;
+            line-height: 19px;
+            color: #FFFFFF;
+        }
+    }
+}

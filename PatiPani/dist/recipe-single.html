@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PatiPani | Receta</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css?_v=20220506004746" />
+    <link rel="stylesheet" href="css/style.min.css?_v=20220506004746">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+</head>
+
+<body>
+    <header class="header">
+    <div class="header__upper">
+        <div class="header__container">
+            <a href="index.html" class="logo">
+                LOGO
+            </a>
+            <nav class="header__nav">
+                <ul class="header__nav--list">
+                    <li class="active">
+                        <a href="index.html">principala</a>
+                    </li>
+                    <li>
+                        <span class="icon-bolt"></span>
+                        <a href="promotions.html">Promoții</a>
+                    </li>
+                    <li>
+                        <a href="recipes.html">recete</a>
+                    </li>
+                    <li>
+                        <a href="faq.html">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contacte</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__right">
+                <div class="header__right--call">
+                    <span class="icon-call"></span>
+                    <a href="tel:+373069320200">+(373) 069 320 200</a>
+                </div>
+                <div class="header__right--login">
+                    <!-- <button class=" button__outlined--green">
+                        LOGARE
+                    </button> -->
+                </div>
+                <div class="language">
+                    <span class="language__current">
+                        <svg width="28" height="20" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="28" height="20" rx="2" fill="white" />
+                            <mask id="mask0_207_2310" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
+                                width="28" height="20">
+                                <rect width="28" height="20" rx="2" fill="white" />
+                            </mask>
+                            <g mask="url(#mask0_207_2310)">
+                                <rect x="13.3334" width="14.6667" height="20" fill="#E5253D" />
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 20H9.33333V0H0V20Z"
+                                    fill="#0A3D9C" />
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.33337 20H18.6667V0H9.33337V20Z"
+                                    fill="#FFD955" />
+                            </g>
+                        </svg>
+                    </span>
+                </div>
+                <div class="burger">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header__lower">
+        <div class="header__container">
+            <a class="button  button__green button__catalog" href="catalog.html">CATALOG</a>
+            <form action="#" class="search">
+                <input type="text" placeholder="Caută produse">
+                <button class="icon-search search-button"></button>
+            </form>
+            <div class="header__lower--cart">
+                <button class="button button__grey cart-open">
+                    <span class="icon-cart"></span>
+                    <span class="cart__label">14</span>
+                </button> <div class="cart-modal">
+    <div class="cart-modal__header">
+        <h3>Coșul</h3>
+        <button class="modal-close icon-close"></button>
+    </div>
+    <div class="cart-modal__body">
+        <div class="cart-product">
+            <img class="cart-product__image" src="img/new-product.jpg" alt="">
+            <div class="cart-product__content product-content">
+                <p class="product-content__name">
+                    Desert Torct cu glazura de ciocolata
+                </p>
+                <div class="product-content__meta">
+                    <h4>1200 mdl</h4>
+                    <div class="product-controls">
+                        <div class="product-controls__counter">
+                            <button class="icon-minus"></button>
+                            <div class="counter">1</div>
+                            <button class="icon-plus"></button>
+                        </div>
+                        <button class="product-controls__delete icon-close"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cart-product">
+            <img class="cart-product__image" src="img/new-product.jpg" alt="">
+            <div class="cart-product__content product-content">
+                <p class="product-content__name">
+                    Fotoliu de birou Royal Lux Split Piele negru, denumire pe două rânduri
+                </p>
+                <div class="product-content__meta">
+                    <h4>1200 mdl</h4>
+                    <div class="product-controls">
+                        <div class="product-controls__counter">
+                            <button class="icon-minus"></button>
+                            <div class="counter">1</div>
+                            <button class="icon-plus"></button>
+                        </div>
+                        <button class="product-controls__delete icon-close"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cart-product">
+            <img class="cart-product__image" src="img/new-product.jpg" alt="">
+            <div class="cart-product__content product-content">
+                <p class="product-content__name">
+                    Fotoliu de birou Royal Lux Split Piele negru, denumire pe două rânduri
+                </p>
+                <div class="product-content__meta">
+                    <h4>1200 mdl</h4>
+                    <div class="product-controls">
+                        <div class="product-controls__counter">
+                            <button class="icon-minus"></button>
+                            <div class="counter">1</div>
+                            <button class="icon-plus"></button>
+                        </div>
+                        <button class="product-controls__delete icon-close"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cart-product">
+            <img class="cart-product__image" src="img/new-product.jpg" alt="">
+            <div class="cart-product__content product-content">
+                <p class="product-content__name">
+                    Fotoliu de birou Royal Lux Split Piele negru, denumire pe două rânduri
+                </p>
+                <div class="product-content__meta">
+                    <h4>1200 mdl</h4>
+                    <div class="product-controls">
+                        <div class="product-controls__counter">
+                            <button class="icon-minus"></button>
+                            <div class="counter">1</div>
+                            <button class="icon-plus"></button>
+                        </div>
+                        <button class="product-controls__delete icon-close"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cart-product">
+            <img class="cart-product__image" src="img/new-product.jpg" alt="">
+            <div class="cart-product__content product-content">
+                <p class="product-content__name">
+                    Fotoliu de birou Royal Lux Split Piele negru, denumire pe două rânduri
+                </p>
+                <div class="product-content__meta">
+                    <h4>1200 mdl</h4>
+                    <div class="product-controls">
+                        <div class="product-controls__counter">
+                            <button class="icon-minus"></button>
+                            <div class="counter">1</div>
+                            <button class="icon-plus"></button>
+                        </div>
+                        <button class="product-controls__delete icon-close"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cart-modal__footer">
+        <h4>8400 mdl</h4>
+        <a href="checkout.html" class="button__green--secundary">Spre achitare</a>
+    </div>
+</div>
+
+            </div>
+        </div>
+    </div>
+</header>
+
+    <main>
+        <div class="page-title">
+    <div class="page-title__container">
+        <h2>Bnt quod voluptatem</h2>
+        <div class="breadcrumbs">
+    <ul class="breadcrumbs__list">
+        <li><a href="index.html">Principala</a></li>
+        <li><a href="#">Catalog</a></li>
+        <li><a href="#">Promoții</a></li>
+    </ul>
+</div>
+    </div>
+</div>
+        <div class="recipe__single">
+            <div class="single__container">
+                <div class="single__intro">
+                    <div class="single__socials" style="background: url(../dist/catalog.html) 50% 50% /  cover no-repeat;">
+                        <a href="#">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M18 0C8.05887 0 0 8.05887 0 18C0 27.9411 8.05887 36 18 36C27.9411 36 36 27.9411 36 18C36 8.05887 27.9411 0 18 0ZM19.8762 18.7907V28.5836H15.8243V18.791H13.8V15.4163H15.8243V13.3902C15.8243 10.6371 16.9674 9 20.2149 9H22.9186V12.3751H21.2286C19.9644 12.3751 19.8808 12.8467 19.8808 13.7269L19.8762 15.416H22.9377L22.5794 18.7907H19.8762Z" fill="black"/>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M18 0C8.05887 0 0 8.05887 0 18C0 27.9411 8.05887 36 18 36C27.9411 36 36 27.9411 36 18C36 8.05887 27.9411 0 18 0ZM17.4987 15.2535L17.4609 14.6306C17.3476 13.0163 18.3422 11.5418 19.9161 10.9698C20.4952 10.7665 21.4773 10.741 22.1194 10.919C22.3712 10.9953 22.8497 11.2495 23.1896 11.4783L23.8066 11.8978L24.4865 11.6817C24.8642 11.5673 25.3678 11.3766 25.5944 11.2495C25.8085 11.1351 25.9973 11.0715 25.9973 11.1097C25.9973 11.3258 25.5315 12.063 25.1412 12.4697C24.6124 13.0417 24.7635 13.0926 25.8337 12.7113C26.4758 12.4952 26.4884 12.4952 26.3625 12.7367C26.2869 12.8638 25.8966 13.3087 25.4811 13.7154C24.7761 14.4145 24.7383 14.4908 24.7383 15.0755C24.7383 15.978 24.3102 17.8592 23.8821 18.8888C23.0889 20.8209 21.3892 22.8165 19.6894 23.8207C17.2972 25.2316 14.1118 25.5875 11.43 24.7613C10.5361 24.4817 9 23.7699 9 23.6427C9 23.6046 9.46585 23.5538 10.0324 23.5411C11.216 23.5156 12.3995 23.1852 13.4067 22.6004L14.0866 22.1937L13.306 21.9268C12.198 21.5454 11.2034 20.6684 10.9515 19.8421C10.876 19.5752 10.9012 19.5625 11.6063 19.5625L12.3365 19.5498L11.7196 19.2574C10.9893 18.8888 10.322 18.266 9.99466 17.6304C9.75544 17.1728 9.45326 16.0161 9.5414 15.9272C9.56658 15.889 9.83098 15.9653 10.1332 16.067C11.0019 16.3847 11.1152 16.3085 10.6116 15.7746C9.6673 14.8086 9.37772 13.3722 9.83098 12.0122L10.045 11.402L10.876 12.2282C12.5757 13.8934 14.5776 14.8848 16.8691 15.1772L17.4987 15.2535Z" fill="black"/>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 18C0 8.05887 8.05887 0 18 0C27.9411 0 36 8.05887 36 18C36 27.9411 27.9411 36 18 36C8.05887 36 0 27.9411 0 18ZM17.9878 18.289C20.6421 18.289 22.7997 16.206 22.7997 13.6452C22.7997 11.0836 20.6421 9 17.9878 9C15.3341 9 13.1758 11.0836 13.1758 13.6452C13.1758 16.206 15.3341 18.289 17.9878 18.289ZM22.7412 20.9633C21.8711 21.4908 20.9265 21.8648 19.947 22.0802L22.637 24.6771C23.188 25.208 23.188 26.0701 22.637 26.6015C22.0865 27.1328 21.1942 27.1328 20.6443 26.6015L17.9995 24.0496L15.357 26.6015C15.0815 26.8669 14.7204 26.9997 14.3594 26.9997C13.9989 26.9997 13.6384 26.8669 13.3629 26.6015C12.8124 26.0701 12.8124 25.2085 13.3623 24.6771L16.0526 22.0802C15.0731 21.8648 14.1285 21.4902 13.2584 20.9633C12.5999 20.5625 12.4021 19.7229 12.817 19.0867C13.2308 18.4497 14.1008 18.258 14.7604 18.6587C16.7304 19.8549 19.2681 19.8552 21.2391 18.6587C21.8988 18.258 22.7686 18.4497 23.1831 19.0867C23.598 19.7223 23.3997 20.5625 22.7412 20.9633Z" fill="black"/>
+                                <path d="M17.9875 11.7222C19.0862 11.7222 19.9799 12.5846 19.9799 13.6452C19.9799 14.7049 19.0862 15.5679 17.9875 15.5679C16.8897 15.5679 15.9951 14.7049 15.9951 13.6452C15.9951 12.5846 16.8897 11.7222 17.9875 11.7222Z" fill="black"/>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 17.9212C0 27.6904 8.04379 35.6123 17.97 35.6123C27.8944 35.6123 35.9401 27.6904 35.9401 17.9212C35.9401 8.1519 27.8944 0.231903 17.97 0.231903C8.04379 0.231903 0 8.1519 0 17.9212ZM12.0124 32.85C5.95498 30.5138 1.66265 24.7121 1.66265 17.9214C1.66265 9.06536 8.95384 1.88999 17.9485 1.88999C26.9431 1.88999 34.2343 9.06536 34.2343 17.9214C34.2343 26.7755 26.9431 33.9527 17.9485 33.9527C16.2681 33.9527 14.6494 33.7026 13.1268 33.2365C13.789 32.1717 14.7822 30.4266 15.1498 29.034C15.3481 28.2837 16.1642 25.2237 16.1642 25.2237C16.6954 26.2203 18.2468 27.0654 19.8983 27.0654C24.8085 27.0654 28.3482 22.6184 28.3482 17.0934C28.3482 11.7976 23.9578 7.83378 18.3084 7.83378C11.2809 7.83378 7.54873 12.4797 7.54873 17.5367C7.54873 19.8862 8.8191 22.8155 10.8517 23.7477C11.1616 23.8879 11.3271 23.8254 11.3984 23.5317C11.4202 23.4419 11.4783 23.21 11.5479 22.9321C11.6502 22.5235 11.7774 22.0157 11.8507 21.7146C11.8892 21.5517 11.8699 21.4134 11.7371 21.2542C11.0634 20.4508 10.5264 18.9729 10.5264 17.5955C10.5264 14.0599 13.2462 10.638 17.8792 10.638C21.8809 10.638 24.6815 13.3209 24.6815 17.1597C24.6815 21.4967 22.4564 24.5018 19.5615 24.5018C17.9639 24.5018 16.7667 23.202 17.1497 21.6047C17.3159 20.9161 17.5381 20.2079 17.7542 19.5193C18.1362 18.302 18.499 17.1459 18.499 16.2673C18.499 15.0357 17.8272 14.0087 16.4394 14.0087C14.8033 14.0087 13.4925 15.6723 13.4925 17.9024C13.4925 19.3216 13.9795 20.2822 13.9795 20.2822C13.9795 20.2822 12.3646 26.999 12.0701 28.2496C11.7429 29.6365 11.8699 31.5824 12.0124 32.85Z" fill="black"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="single__details">
+                        <img src="img/tort.jpg" alt="">
+                        <div class="single__details--desc">
+                            <h3>Ingrediente:</h3>
+                            <ul>
+                                <li>et adipisci nisi 7 ml</li>
+                                <li>vel totam ea</li>
+                                <li>deserunt dolores voluptas 4 buc</li>
+                                <li>ullam consequatur occaecati</li>
+                                <li>est eaque cumque 20 buc</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single__prepare">
+                <div class="single__container">
+                    <h3>Mod de preparare:</h3>
+                    <ul>
+                        <li>
+                            <p>Voluptatibus labore beatae animi omnis officiis labore deserunt eum sit. Voluptatem deserunt praesentium enim. Voluptate cupiditate quas aut non sed eligendi.</p>
+                        </li>
+                        <li>
+                            <p>Voluptatem fugit itaque amet commodi sit odit aliquid quia. Illo rerum sed enim rem libero. Sed nesciunt commodi ratione eos nobis ea.</p>
+                        </li>
+                        <li>
+                            <p>Hic pariatur odit enim molestias repellendus laboriosam vero.</p>
+                            <img src="img/prepare.jpg" alt="">
+                        </li>
+                        <li>
+                            <p>Voluptatem fugit itaque amet commodi sit odit aliquid quia. Illo rerum sed enim rem libero. Sed nesciunt commodi ratione eos nobis ea.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="similar">
+                <div class="single__container">
+                    <h3>Produse din recetă:</h3>
+                    <div class="similar__grid first-grid">
+                        <div class="product">
+                            <div class="product__images product-images">
+                                <img class="product-images__image product-images__image--active" src="img/product1.jpg" alt="">
+                                <img class="product-images__image" src="img/product2.jpg" alt="">
+                            </div>
+                            <div class="product__pagination"></div>
+                            <div class="product__info">
+                                <p>
+                                    Nostrum quidem expedita accusa fdsfdsfsdfsdf fdsfdsf dsf sdf sfs sdfs ...
+                                </p>
+                            </div>
+                            <div class="product__footer">
+                                <div class="product__price">
+                                    <span class="current-price">293 MDL</span>
+                                    <span class="splashed-price">940 MDL</span>
+                                </div>
+                                <button class="button button__outlined--gray product__cart">
+                                    <span class="icon-cart"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="product__images product-images">
+                                <img class="product-images__image product-images__image--active" src="img/product1.jpg" alt="">
+                                <img class="product-images__image" src="img/product2.jpg" alt="">
+                            </div>
+                            <div class="product__pagination"></div>
+                            <div class="product__info">
+                                <p>
+                                    Nostrum quidem expedita accusa fdsfdsfsdfsdf fdsfdsf dsf sdf sfs sdfs ...
+                                </p>
+                            </div>
+                            <div class="product__footer">
+                                <div class="product__price">
+                                    <span class="current-price">293 MDL</span>
+                                    <span class="splashed-price">940 MDL</span>
+                                </div>
+                                <button class="button button__outlined--gray product__cart">
+                                    <span class="icon-cart"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product exhausted">
+                            <div class="product__label">
+                                <span>Stoc epuizat</span>
+                            </div>
+                            <div class="product__images product-images">
+                                <img class="product-images__image product-images__image--active" src="img/product1.jpg" alt="">
+                                <img class="product-images__image" src="img/product2.jpg" alt="">
+                            </div>
+                            <div class="product__pagination"></div>
+                            <div class="product__info">
+                                <p>
+                                    Nostrum quidem expedita accusa fdsfdsfsdfsdf fdsfdsf dsf sdf sfs sdfs ...
+                                </p>
+                            </div>
+                            <div class="product__footer">
+                                <div class="product__price">
+                                    <span class="current-price">293 MDL</span>
+                                    <span class="splashed-price">940 MDL</span>
+                                </div>
+                                <button class="button button__outlined--gray product__cart">
+                                    <span class="icon-cart"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="product__images product-images">
+                                <img class="product-images__image product-images__image--active" src="img/product1.jpg" alt="">
+                                <img class="product-images__image" src="img/product2.jpg" alt="">
+                            </div>
+                            <div class="product__pagination"></div>
+                            <div class="product__info">
+                                <p>
+                                    Nostrum quidem expedita accusa fdsfdsfsdfsdf fdsfdsf dsf sdf sfs sdfs ...
+                                </p>
+                            </div>
+                            <div class="product__footer">
+                                <div class="product__price">
+                                    <span class="current-price">293 MDL</span>
+                                    <span class="splashed-price">940 MDL</span>
+                                </div>
+                                <button class="button button__outlined--gray product__cart">
+                                    <span class="icon-cart"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="product__images product-images">
+                                <img class="product-images__image product-images__image--active" src="img/product1.jpg" alt="">
+                                <img class="product-images__image" src="img/product2.jpg" alt="">
+                            </div>
+                            <div class="product__pagination"></div>
+                            <div class="product__info">
+                                <p>
+                                    Nostrum quidem expedita accusa fdsfdsfsdfsdf fdsfdsf dsf sdf sfs sdfs ...
+                                </p>
+                            </div>
+                            <div class="product__footer">
+                                <div class="product__price">
+                                    <span class="current-price">293 MDL</span>
+                                    <span class="splashed-price">940 MDL</span>
+                                </div>
+                                <button class="button button__outlined--gray product__cart">
+                                    <span class="icon-cart"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="product__images product-images">
+                                <img class="product-images__image product-images__image--active" src="img/product1.jpg" alt="">
+                                <img class="product-images__image" src="img/product2.jpg" alt="">
+                            </div>
+                            <div class="product__pagination"></div>
+                            <div class="product__info">
+                                <p>
+                                    Nostrum quidem expedita accusa fdsfdsfsdfsdf fdsfdsf dsf sdf sfs sdfs ...
+                                </p>
+                            </div>
+                            <div class="product__footer">
+                                <div class="product__price">
+                                    <span class="current-price">293 MDL</span>
+                                    <span class="splashed-price">940 MDL</span>
+                                </div>
+                                <button class="button button__outlined--gray product__cart">
+                                    <span class="icon-cart"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="search-modal">
+    <div class="search-modal__header">
+        <div class="search-modal__close">
+            <button class="icon-close"></button>
+        </div>
+        <form action="#" class="search">
+            <input type="text" placeholder="Caută produse">
+            <button class="icon-search search-button"></button>
+        </form>
+    </div>
+    <div class="search-modal__body">
+
+    </div>
+</div>
+
+
+<footer class="footer">
+    <div class="footer__container">
+        <a href="index.html" class="logo">LOGO</a>
+        <div class="footer__center">
+            <ul class="footer__center--list">
+                <li>
+                    <a href="promotions.html">Promoții</a>
+                </li>
+                <li>
+                    <a href="recipes.html">Recete</a>
+                </li>
+                <li>
+                    <a href="faq.html">FAQ</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contacte</a>
+                </li>
+            </ul>
+            <div class="footer__center--copyright">
+                <p>Copyright © 2022. Patipani. All rights reserved.</p>
+            </div>
+        </div>
+        <div class="footer__social">
+            <a href="#">
+                <span class="icon-facebook"></span>
+            </a>
+            <a href="#">
+                <span class="icon-mail"></span>
+            </a>
+        </div>
+    </div>
+</footer>
+
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.7/swiper-bundle.min.js?_v=20220506004746" integrity="sha512-WlN87oHzYKO5YOmINf1+pSkbt4gm+lOro4fiSTCjII4ykJe/ycHKIaa9b2l9OMkbqEA4NxwTXAGFjSXgqEh19w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/app.min.js?_v=20220506004746"></script>
+</body>
+
+</html>

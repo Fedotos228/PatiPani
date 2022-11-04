@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('./components/head.html', {'title': 'PatiPani | Catalog'})
+
+<body>
+    @@include('./components/header.html')
+    <main>
+        @@include('./components/page-title.html', {'title': 'Catalog'})
+        <div class="catalog">
+            <div class="catalog__container">
+                <div class="catalog__category">
+                    <img src="@img/category1.png" alt="">
+                    <a href="#">Ciocolată și glazură</a>
+                </div>
+                <div class="catalog__category">
+                    <img src="@img/category2.png" alt="">
+                    <a href="">Ingrediente</a>
+                </div>
+                <div class="catalog__category">
+                    <img src="@img/category3.png" alt="">
+                    <a href="#">Produse pentru decor</a>
+                </div>
+                <div class="catalog__category">
+                    <img src="@img/category4.png" alt="">
+                    <a href="#">Ambalaje și suporturi</a>
+                </div>
+                <div class="catalog__category">
+                    <img src="@img/category5.png" alt="">
+                    <a href="#">Accesorii și echipamente</a>
+                </div>
+                <div class="catalog__category">
+                    <img src="@img/category6.png" alt="">
+                    <a href="#">Utilaje</a>
+                </div>
+            </div>
+        </div>
+        @@include('./components/footer.html')
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.7/swiper-bundle.min.js" integrity="sha512-WlN87oHzYKO5YOmINf1+pSkbt4gm+lOro4fiSTCjII4ykJe/ycHKIaa9b2l9OMkbqEA4NxwTXAGFjSXgqEh19w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>
